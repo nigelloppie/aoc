@@ -5,7 +5,7 @@ fn main() {
     let mut counter = 1u64;
     let mut five_found = false;
     let mut six_found = false;
-    loop {
+    while !five_found || !six_found {
         let key = format!("{}{}", input,counter);
         let hash = Md5::digest(key);
         if format!("{:x}",hash).starts_with("00000") && !five_found {
