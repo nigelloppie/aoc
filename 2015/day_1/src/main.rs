@@ -1,5 +1,4 @@
-use std::fs;
-use std::path::Path;
+use std::fs; use std::path::Path;
 // 34m 24s
 fn main() {
     // ( = +1
